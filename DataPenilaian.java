@@ -30,7 +30,7 @@ public class DataPenilaian {
             }
         }
     
-        System.out.println("Data Penilaian (Urut Nilai Akhir - Tertinggi ke Terendah):");
+        System.out.println("-- Data Penilaian --");
         for (int i = 0; i < idx; i++) {
             daftarNilai[i].tampilNilai();
         }
