@@ -4,6 +4,8 @@ public class Main{
         Scanner sc1127 = new Scanner(System.in);
         int pilih;
 
+        Mahasiswa mhs1 = new Mahasiswa("", 20, 4);
+
         do {
             System.out.println("== MENU SISTEM AKADEMIK ==");
             System.out.println("1. Tampilkan Daftar Mahasiswa");
@@ -19,9 +21,10 @@ public class Main{
 
             switch (pilih) {
                 case 1:
-
+                    tampilMahasiswa();
                     break;
                 case 2:
+                    tampilMataKuliah();
                     break;
                 case 3:
                     break;
