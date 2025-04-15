@@ -9,7 +9,7 @@ public class Main{
             new Mahasiswa("Rizky", "wdwd", "dwdw"),
             new Mahasiswa("Rizky", "wdwd", "dwdw")
         };
-
+//
         //Mahasiswa mhs1 = new Mahasiswa("22001", "Ali Rahman", "Teknik Informatika");
         //Mahasiswa mhs2 = new Mahasiswa("22002", "Budi Santoso", "Teknik Informatika");
         //Mahasiswa mhs3 = new Mahasiswa("22003", "Citra dewi", "Teknik Informatika");
