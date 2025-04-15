@@ -4,7 +4,11 @@ public class Main{
         Scanner sc1127 = new Scanner(System.in);
         int pilih;
 
-
+        Mahasiswa[] dataMhs = {
+            new Mahasiswa("Rizky", "wdwd", "dwdw"),
+            new Mahasiswa("Rizky", "wdwd", "dwdw"),
+            new Mahasiswa("Rizky", "wdwd", "dwdw")
+        };
 
         //Mahasiswa mhs1 = new Mahasiswa("22001", "Ali Rahman", "Teknik Informatika");
         //Mahasiswa mhs2 = new Mahasiswa("22002", "Budi Santoso", "Teknik Informatika");
@@ -25,7 +29,7 @@ public class Main{
 
             switch (pilih) {
                 case 1:
-                    
+                    System
                     break;
                 case 2:
                     tampilMataKuliah();
