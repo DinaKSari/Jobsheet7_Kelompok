@@ -2,6 +2,7 @@ public class Mahasiswa {
     String nim;
     String nama;
     String prodi;
+    Mahasiswa dataMahasiswa[] = new Mahasiswa[5];
 
     //KONSTRUKTOR BERPARAMETER
     Mahasiswa(String nim, String nama, String prodi){
