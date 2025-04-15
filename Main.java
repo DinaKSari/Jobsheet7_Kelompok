@@ -4,7 +4,11 @@ public class Main{
         Scanner sc1127 = new Scanner(System.in);
         int pilih;
 
-        Mahasiswa mhs1 = new Mahasiswa("", 20, 4);
+
+
+        //Mahasiswa mhs1 = new Mahasiswa("22001", "Ali Rahman", "Teknik Informatika");
+        //Mahasiswa mhs2 = new Mahasiswa("22002", "Budi Santoso", "Teknik Informatika");
+        //Mahasiswa mhs3 = new Mahasiswa("22003", "Citra dewi", "Teknik Informatika");
 
         do {
             System.out.println("== MENU SISTEM AKADEMIK ==");
@@ -21,7 +25,7 @@ public class Main{
 
             switch (pilih) {
                 case 1:
-                    tampilMahasiswa();
+                    
                     break;
                 case 2:
                     tampilMataKuliah();
