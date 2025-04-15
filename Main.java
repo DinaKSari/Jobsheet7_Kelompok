@@ -6,13 +6,29 @@ public class Main {
         int pilih;
         DataMahasiswa daftarMhs = new DataMahasiswa();
 
-        // Tambah data awal
+        // Tambah data awal mahasiswa
         Mahasiswa mhs1 = new Mahasiswa("22001", "Ali Rahman", "Teknik Informatika");
         Mahasiswa mhs2 = new Mahasiswa("22002", "Budi Santoso", "Teknik Informatika");
         Mahasiswa mhs3 = new Mahasiswa("22003", "Citra Dewi", "Teknik Informatika");
+        
         daftarMhs.tambah(mhs1);
         daftarMhs.tambah(mhs2);
         daftarMhs.tambah(mhs3);
+
+        //tambah data aawal matakuliah
+        DataMataKuliah daftarMK = new DataMataKuliah();
+        daftarMK.tambah(new MataKuliah("MK001", "Struktur Data", 3));
+        daftarMK.tambah(new MataKuliah("MK002", "Basis Data", 3));
+        daftarMK.tambah(new MataKuliah("MK003", "Desain Web", 3));
+
+        //tambah data awal nilai
+        DataPenilaian daftarNilai = new DataPenilaian();
+        daftarNilai.tambah(new Penilaian(mhs3, daftarMK.daftarMK[1], 90, 91, 92)); 
+        daftarNilai.tambah(new Penilaian(mhs1, daftarMK.daftarMK[0], 80, 85, 90)); 
+        daftarNilai.tambah(new Penilaian(mhs3, daftarMK.daftarMK[2], 70, 75, 80)); 
+        daftarNilai.tambah(new Penilaian(mhs2, daftarMK.daftarMK[0], 70, 75, 80)); 
+        daftarNilai.tambah(new Penilaian(mhs1, daftarMK.daftarMK[1], 60, 65, 70)); 
+
 
         do {
             System.out.println("\n== MENU SISTEM AKADEMIK ==");
@@ -24,7 +40,7 @@ public class Main {
             System.out.println("0. Keluar");
             System.out.print("Pilih menu: ");
             pilih = sc1127.nextInt();
-            sc1127.nextLine(); // Buang newline
+            sc1127.nextLine();
 
             System.out.println();
 
@@ -33,13 +49,13 @@ public class Main {
                     daftarMhs.tampilMhs();
                     break;
                 case 2:
-                    System.out.println("Fitur belum tersedia.");
+                    daftarMK.tampilMK();
                     break;
                 case 3:
-                    System.out.println("Fitur belum tersedia.");
+                    daftarNilai.tampilSemua();
                     break;
                 case 4:
-                    System.out.println("Fitur belum tersedia.");
+                    daftarNilai.urutkanBerdasarkanNilaiAkhir();
                     break;
                 case 5:
                     System.out.print("Masukkan NIM yang dicari: ");
