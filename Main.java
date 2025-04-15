@@ -30,11 +30,7 @@ public class Main {
 
             switch (pilih) {
                 case 1:
-<<<<<<< HEAD
                     daftarMhs.tampilMhs();
-=======
-                    
->>>>>>> 41897e114be1fa220a683daa1f42ad2080ed8960
                     break;
                 case 2:
                     System.out.println("Fitur belum tersedia.");
